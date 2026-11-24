@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mobilny serwis wózków widłowych Leszno, Gostyń, Rawicz | Technikar</title>
+<meta name="description" content="Technikar - mobilny serwis wózków widłowych, podnośników, ładowarek teleskopowych i suwnic. Przeglądy, naprawy, sprawy UDT, wynajem i sprzedaż wózków. Leszno i okolice.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#3F3081">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" href="fonts/archivo-latin-800-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/archivo-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-m-800.webp" media="(max-width:760px)" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-800.webp 800w, img/hero-m-1100.webp 1100w" imagesizes="100vw">
+<link rel="preload" as="image" href="img/hero-1600.webp" media="(min-width:761px)" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2560.webp 2560w" imagesizes="100vw">
+<style>
+@font-face{font-family:Archivo;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/archivo-latin-400.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Archivo;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/archivo-latin-ext-400.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Archivo;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/archivo-latin-600.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Archivo;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/archivo-latin-ext-600.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Archivo;font-style:italic;font-weight:800;font-display:swap;src:url(fonts/archivo-latin-800-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Archivo;font-style:italic;font-weight:800;font-display:swap;src:url(fonts/archivo-latin-ext-800-italic.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--fio:#3F3081;--fio2:#2E2363;--fio-j:#ECEAF6;--zol:#FFC21A;--graf:#17141F;--tekst:#262331;--szary:#EEF0F4;--linia:#D9DCE3;--skos:12deg;--hh:72px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 Archivo,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--tekst);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--fio)}
+h1,h2,h3{font-family:Archivo,system-ui,sans-serif;font-style:italic;font-weight:800;line-height:1.08;letter-spacing:-.01em;color:var(--graf);margin:0}
+h2{font-size:clamp(30px,4.2vw,52px)}
+h3{font-size:22px}
+p{margin:0}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+/* przycisk: wstega z logo */
+.btn{--bg:var(--zol);--fg:var(--graf);position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 30px;font:italic 800 18px/1 Archivo,sans-serif;color:var(--fg);text-decoration:none;border:0;cursor:pointer;background:none;isolation:isolate}
+.btn::before{content:"";position:absolute;inset:0;background:var(--bg);transform:skewX(calc(var(--skos) * -1));z-index:-1;transition:background .2s}
+.btn:hover::before{background:#FFD24F}
+.btn.fio{--bg:var(--fio);--fg:#fff}
+.btn.fio:hover::before{background:var(--fio2)}
+.btn:focus-visible{outline:3px solid var(--zol);outline-offset:4px}
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linia)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:var(--hh)}
+.logo{display:block;flex:none}
+.logo img{width:180px;height:auto}
+.menu{display:flex;gap:4px;margin-left:auto;list-style:none;padding:0;margin-block:0}
+.menu a{display:block;padding:10px 12px;font-weight:600;font-size:16px;color:var(--graf);text-decoration:none;position:relative}
+.menu a::after{content:"";position:absolute;left:12px;right:12px;bottom:4px;height:4px;background:var(--fio);transform:skewX(-12deg) scaleX(0);transform-origin:left;transition:transform .2s}
+.menu a:hover::after,.menu a[aria-current]::after{transform:skewX(-12deg) scaleX(1)}
+.tel{display:inline-flex;align-items:center;gap:10px;font:italic 800 19px/1 Archivo,sans-serif;color:var(--fio);text-decoration:none;white-space:nowrap}
+.tel svg{width:20px;height:20px;flex:none}
+.burger{display:none;margin-left:auto;width:48px;height:48px;border:0;background:none;padding:12px;cursor:pointer}
+.burger span{display:block;height:3px;background:var(--graf);margin:5px 0;transform:skewX(-12deg)}
+/* hero */
+.hero{position:relative;padding:0;min-height:calc(100svh - var(--hh));display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--graf)}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,20,31,.78) 0%,rgba(23,20,31,.45) 38%,rgba(23,20,31,0) 62%),linear-gradient(0deg,rgba(23,20,31,.55),rgba(23,20,31,0) 45%)}
+.hero-in{position:relative;z-index:2;width:min(1240px,100% - 40px);margin:0 auto;padding:0 0 clamp(40px,8vh,96px)}
+.wstega{display:inline-block;position:relative;padding:8px 22px 9px;font:italic 800 17px/1 Archivo,sans-serif;color:#fff;margin-left:6px;isolation:isolate}
+.wstega::before{content:"";position:absolute;inset:0;background:var(--fio);transform:skewX(calc(var(--skos) * -1));z-index:-1}
+.hero h1{color:#fff;font-size:clamp(38px,5vw,74px);max-width:17ch;margin:18px 0 18px;text-shadow:0 2px 24px rgba(0,0,0,.25)}
+.hero .lead{font-size:clamp(17px,1.5vw,21px);max-width:44ch;color:#F1F0F6;margin-bottom:30px}
+.hero .cta{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px}
+.hero .cta .tel{color:#fff;font-size:21px}
+/* trasa - pasek miast */
+.trasa{background:var(--fio);color:#fff;position:relative;overflow:hidden}
+.trasa .wrap{display:flex;align-items:center;gap:22px;padding:20px 0;flex-wrap:wrap}
+.trasa b{font:italic 800 19px/1.2 Archivo,sans-serif;flex:none}
+.trasa ul{display:flex;flex-wrap:wrap;gap:6px 0;list-style:none;margin:0;padding:0}
+.trasa li{font-weight:600;font-size:17px;padding:0 16px;position:relative}
+.trasa li+li::before{content:"";position:absolute;left:-4px;top:50%;width:9px;height:3px;background:var(--zol);transform:translateY(-50%) skewX(-12deg)}
+/* sekcje */
+section{padding:clamp(64px,9vw,120px) 0}
+.szary{background:var(--szary)}
+.glowa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 60px;align-items:end;margin-bottom:44px}
+.glowa p{font-size:18px;max-width:52ch}
+/* uslugi - karty przesuwane */
+.karty{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/3);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;padding-bottom:4px}
+.karty::-webkit-scrollbar{display:none}
+.karty.ciagnie{cursor:grabbing;scroll-snap-type:none}
+.karta{scroll-snap-align:start;background:#fff;display:flex;flex-direction:column;min-width:0;user-select:none}
+.karta figure{margin:0;position:relative;aspect-ratio:3/2;overflow:hidden;background:var(--szary)}
+.karta figure img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.karta .tresc{padding:24px 26px 30px;display:flex;flex-direction:column;gap:12px;flex:1}
+.karta h3{display:flex;align-items:baseline;gap:12px}
+.karta h3::before{content:"";flex:none;width:18px;height:6px;background:var(--fio);transform:skewX(-12deg) translateY(-4px)}
+.karta p{font-size:16px;color:#4A4658}
+.karta .marki{font-weight:600;color:var(--fio);font-size:15px}
+.nawig{display:flex;gap:12px;justify-content:flex-end;margin-top:26px}
+.nawig button{width:58px;height:46px;border:0;background:none;cursor:pointer;position:relative;isolation:isolate}
+.nawig button::before{content:"";position:absolute;inset:0;background:var(--graf);transform:skewX(-12deg);z-index:-1}
+.nawig button:disabled{opacity:.3;cursor:default}
+.nawig svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2.6}
+/* warsztat przyjezdza */
+.przyjazd{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,6vw,90px);align-items:center}
+.przyjazd figure{margin:0;position:relative}
+.przyjazd figure img{width:100%;aspect-ratio:4/3.4;object-fit:cover}
+.przyjazd figure::after{content:"";position:absolute;left:-14px;bottom:-14px;width:46%;height:14px;background:var(--zol);transform:skewX(-12deg)}
+.przyjazd h2{margin-bottom:22px}
+.przyjazd > div > p{font-size:18px;margin-bottom:26px}
+.lista{list-style:none;padding:0;margin:0 0 32px;display:grid;gap:16px}
+.lista li{padding-left:34px;position:relative}
+.lista li::before{content:"";position:absolute;left:0;top:.62em;width:20px;height:5px;background:var(--fio);transform:skewX(-12deg)}
+.lista b{display:block;color:var(--graf);font-weight:600}
+/* UDT - mocna sekcja */
+.udt{background:var(--graf);color:#E7E5EE;position:relative;overflow:hidden}
+.udt::before{content:"";position:absolute;right:-8%;top:0;bottom:0;width:38%;background:var(--fio);transform:skewX(-12deg);opacity:.9}
+.udt .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px 70px;align-items:center}
+.udt h2{color:#fff;margin-bottom:22px}
+.udt p{font-size:18px;max-width:56ch}
+.udt p+p{margin-top:16px}
+.udt .boks{background:#fff;color:var(--tekst);padding:34px 34px 36px}
+.udt .boks h3{margin-bottom:14px}
+.udt .boks ul{margin:0 0 26px;padding:0;list-style:none;display:grid;gap:10px}
+.udt .boks li{padding-left:28px;position:relative;font-size:16px}
+.udt .boks li::before{content:"";position:absolute;left:0;top:.65em;width:16px;height:4px;background:var(--zol);transform:skewX(-12deg)}
+/* obszar */
+.miasta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--linia)}
+.miasta a{display:flex;flex-direction:column;gap:6px;padding:26px 22px 26px 0;border-bottom:1px solid var(--linia);text-decoration:none;color:var(--graf)}
+.miasta a strong{font:italic 800 clamp(24px,2.4vw,32px)/1.05 Archivo,sans-serif}
+.miasta a span{font-size:15px;color:#5C586B}
+.miasta a:hover strong{color:var(--fio)}
+.obszar-uw{margin-top:22px;font-size:16px;color:#5C586B}
+/* poradnik */
+.wpisy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.wpis{text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:14px}
+.wpis figure{margin:0;aspect-ratio:16/9;overflow:hidden}
+.wpis img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.wpis:hover img{transform:scale(1.03)}
+.wpis small{font-weight:600;color:var(--fio);font-size:14px}
+.wpis h3{font-size:21px}
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,80px)}
+.kontakt h2{margin-bottom:20px}
+.kontakt .dane{display:grid;gap:22px;margin-top:30px}
+.kontakt .dane a,.kontakt .dane div{text-decoration:none;color:var(--graf)}
+.kontakt .dane small{display:block;font-size:14px;color:#5C586B;margin-bottom:2px}
+.kontakt .dane strong{font:italic 800 26px/1.15 Archivo,sans-serif;color:var(--fio);word-break:break-word}
+form{background:#fff;padding:clamp(24px,3.4vw,44px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+form .cale{grid-column:1/-1}
+label{display:grid;gap:6px;font-size:15px;font-weight:600;color:var(--graf)}
+input,select,textarea{font:inherit;font-weight:400;font-size:16px;width:100%;padding:13px 14px;border:1px solid #C9CCD6;background:#fff;color:var(--tekst);border-radius:0}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--fio);outline-offset:0;border-color:var(--fio)}
+textarea{min-height:120px;resize:vertical}
+.zgoda{display:flex;gap:10px;font-weight:400;font-size:14px;color:#5C586B;align-items:flex-start}
+.zgoda input{width:20px;height:20px;flex:none;margin-top:2px}
+form .btn{justify-self:start}
+.info-form{font-size:14px;color:#5C586B}
+/* stopka */
+footer{background:var(--fio2);color:#D9D5EC;padding:56px 0 26px;font-size:15px}
+footer .kol{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:30px}
+footer h4{margin:0 0 12px;color:#fff;font:italic 800 18px/1.2 Archivo,sans-serif}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{text-decoration:underline}
+.f-logo{font:italic 800 30px/1 Archivo,sans-serif;color:#fff;letter-spacing:-.01em}
+.f-logo + .wstega{margin:10px 0 16px 4px;font-size:14px;padding:6px 16px}
+.f-logo + .wstega::before{background:var(--zol)}
+.f-logo + .wstega{color:var(--graf)}
+.dol{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center;margin-top:44px;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);font-size:13px;color:#B9B3D6}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+
+/* pasek mobilny */
+.mob{display:none}
+@media (max-width:1100px){
+ .menu{display:none}
+ .burger{display:block;margin-left:4px;order:3}
+ .top .tel{margin-left:auto}
+ .menu.otw{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:var(--hh);background:#fff;padding:12px 20px 24px;border-bottom:4px solid var(--fio);box-shadow:0 20px 30px rgba(23,20,31,.15)}
+ .menu.otw a{font-size:20px;padding:14px 4px;border-bottom:1px solid var(--linia)}
+ .menu.otw a::after{display:none}
+ .karty{grid-auto-columns:calc((100% - 24px)/2)}
+ .miasta{grid-template-columns:repeat(2,minmax(0,1fr))}
+ footer .kol{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+ .glowa,.przyjazd,.udt .wrap,.kontakt{grid-template-columns:minmax(0,1fr)}
+ .udt::before{width:60%;right:-30%;opacity:.55}
+ .wpisy{grid-template-columns:minmax(0,1fr);gap:34px}
+}
+@media (max-width:760px){
+ :root{--hh:64px}
+ body{font-size:16px}
+ .logo img{width:150px}
+ .top .tel span{display:none}
+ .top .tel{width:48px;height:48px;justify-content:center;background:var(--fio-j)}
+ .hero{flex-direction:column;align-items:stretch;justify-content:flex-start;background:var(--graf)}
+ .hero::after{display:none}
+ .hero picture{position:relative;inset:auto;flex:1 1 0;min-height:min(62vw,30svh);display:block}
+ .hero picture img{object-position:50% 28%}
+ .hero picture::after{content:"";position:absolute;left:0;right:0;bottom:0;height:40%;background:linear-gradient(0deg,var(--graf),rgba(23,20,31,0))}
+ .hero-in{flex:0 0 auto;padding:0 0 28px;margin-top:-26px}
+ .hero h1{font-size:clamp(30px,min(9vw,5.4svh),44px);margin:14px 0 12px}
+ .hero .lead{font-size:clamp(15px,2.2svh,17px);margin-bottom:24px;line-height:1.5}
+ .hero .cta .tel{display:none}
+ .hero .btn{width:100%;margin-left:6px;width:calc(100% - 12px)}
+ .wstega{font-size:15px}
+ .trasa .wrap{gap:10px;padding:16px 0}
+ .trasa li{font-size:15px;padding:0 12px}
+ .trasa li:first-child{padding-left:0}
+ .karty{grid-auto-columns:86%;gap:16px}
+ .nawig{display:none}
+ .miasta a{padding:20px 12px 20px 0}
+ form{grid-template-columns:minmax(0,1fr)}
+ .kontakt .dane strong{font-size:22px}
+ footer .kol{grid-template-columns:1fr 1fr;gap:26px 18px}
+ footer .kol > div:first-child{grid-column:1/-1}
+ .mob{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;background:#fff;box-shadow:0 -6px 20px rgba(23,20,31,.18);transform:translateY(110%);transition:transform .25s;padding-bottom:env(safe-area-inset-bottom)}
+ .mob.widac{transform:none}
+ .mob a{display:flex;align-items:center;justify-content:center;gap:8px;height:56px;font:italic 800 17px/1 Archivo,sans-serif;text-decoration:none;color:var(--graf)}
+ .mob a:first-child{background:var(--fio);color:#fff}
+ .mob a:last-child{background:var(--zol)}
+ footer{padding-bottom:86px}
+}
+@media (max-width:760px) and (max-height:700px){
+ .hero picture{min-height:24svh}
+ .hero h1{margin:10px 0 10px}
+ .hero .lead{margin-bottom:24px}
+}
+@media (min-width:761px) and (max-height:820px){
+ .hero h1{font-size:clamp(34px,3.9vw,56px);margin:14px 0 14px}
+ .hero .lead{margin-bottom:24px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#" aria-label="Technikar - strona główna"><img src="img/logo.webp" width="510" height="142" alt="Technikar mobilny serwis"></a>
+  <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <ul class="menu" id="menu">
+   <li><a href="#uslugi" aria-current="page">Serwis</a></li>
+   <li><a href="#uslugi">Wynajem</a></li>
+   <li><a href="#uslugi">Sprzedaż</a></li>
+   <li><a href="#udt">UDT</a></li>
+   <li><a href="#obszar">Obszar</a></li>
+   <li><a href="#poradnik">Poradnik</a></li>
+   <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <a class="tel" href="tel:+48727436797" aria-label="Zadzwoń: 727 436 797"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5.6 1.5 3 2.2C1.9 2.6 1.3 3.8 1.6 5c1.7 6.6 6.8 11.7 13.4 13.4 1.2.3 2.4-.3 2.8-1.4l.7-2.6-4.4-2.4-2 2c-2.6-1.2-4.6-3.2-5.8-5.8l2-2z"/></svg><span>727 436 797</span></a>
+ </div>
+</header>
+
+<main>
+<section class="hero" aria-label="Technikar - mobilny serwis">
+ <picture>
+  <source media="(max-width:760px)" srcset="img/hero-m-480.webp 480w, img/hero-m-800.webp 800w, img/hero-m-1100.webp 1100w" sizes="100vw">
+  <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2560.webp 2560w" sizes="100vw" width="2560" height="1707" alt="Mechanik przy naprawie maszyny w warsztacie" fetchpriority="high">
+ </picture>
+ <div class="hero-in">
+  <span class="wstega">mobilny serwis</span>
+  <h1>Serwis wózków widłowych z dojazdem do Państwa firmy</h1>
+  <p class="lead">Przeglądy, naprawy i sprawy UDT wózków widłowych, podnośników, ładowarek teleskopowych i suwnic. Przyjeżdżamy na miejsce w Lesznie, Gostyniu, Rawiczu i okolicy.</p>
+  <div class="cta">
+   <a class="btn" href="#kontakt">Zgłoś serwis lub awarię</a>
+   <a class="tel" href="tel:+48727436797"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5.6 1.5 3 2.2C1.9 2.6 1.3 3.8 1.6 5c1.7 6.6 6.8 11.7 13.4 13.4 1.2.3 2.4-.3 2.8-1.4l.7-2.6-4.4-2.4-2 2c-2.6-1.2-4.6-3.2-5.8-5.8l2-2z"/></svg>727 436 797</a>
+  </div>
+ </div>
+</section>
+
+<div class="trasa" id="trasa">
+ <div class="wrap">
+  <b>Dojeżdżamy do:</b>
+  <ul>
+   <li>Leszno</li><li>Gostyń</li><li>Jarocin</li><li>Rawicz</li><li>Śrem</li><li>Kościan</li><li>Krotoszyn</li>
+  </ul>
+ </div>
+</div>
+
+<section id="uslugi" class="szary">
+ <div class="wrap">
+  <div class="glowa">
+   <h2>Wszystko, czego potrzebuje sprzęt w Państwa firmie</h2>
+   <p>Serwisujemy wózki różnych marek i modeli, maszyny budowlane i urządzenia dźwigowe. Gdy potrzebny jest zastępczy albo dodatkowy wózek, mamy też wynajem i sprzedaż.</p>
+  </div>
+  <div class="karty" id="karty" tabindex="0" aria-label="Usługi - przesuń w bok">
+   <article class="karta">
+    <figure><img src="img/serwis-600.webp" srcset="img/serwis-600.webp 600w, img/serwis-1000.webp 1000w" sizes="(max-width:760px) 86vw, (max-width:1100px) 48vw, 400px" width="600" height="400" alt="Serwisant sprawdza układ hydrauliczny wózka" loading="lazy"></figure>
+    <div class="tresc"><h3>Serwis wózków widłowych</h3><p>Przeglądy techniczne, konserwacje i naprawy po awariach, na miejscu u klienta. Wózki elektryczne i spalinowe różnych marek.</p></div>
+   </article>
+   <article class="karta">
+    <figure><img src="img/naprawa-600.webp" srcset="img/naprawa-600.webp 600w, img/naprawa-768.webp 768w" sizes="(max-width:760px) 86vw, (max-width:1100px) 48vw, 400px" width="600" height="343" alt="Naprawa silnika wózka widłowego" loading="lazy"></figure>
+    <div class="tresc"><h3>Podnośniki, ładowarki, suwnice</h3><p>Kontrole stanu technicznego, naprawy hydrauliki i elektryki, przeglądy ładowarek teleskopowych, inspekcje i modernizacje suwnic.</p></div>
+   </article>
+   <article class="karta">
+    <figure><img src="img/maszyny-600.webp" srcset="img/maszyny-600.webp 600w, img/maszyny-1000.webp 1000w" sizes="(max-width:760px) 86vw, (max-width:1100px) 48vw, 400px" width="600" height="548" alt="Serwis maszyny budowlanej" loading="lazy"></figure>
+    <div class="tresc"><h3>Maszyny budowlane</h3><p>Koparki i ładowarki teleskopowe: przeglądy, naprawy pogwarancyjne, modernizacje dopasowane do pracy na budowie.</p></div>
+   </article>
+   <article class="karta">
+    <figure><img src="img/wynajem-600.webp" srcset="img/wynajem-600.webp 600w, img/wynajem-1000.webp 1000w" sizes="(max-width:760px) 86vw, (max-width:1100px) 48vw, 400px" width="600" height="464" alt="Wózek widłowy Linde do wynajęcia" loading="lazy"></figure>
+    <div class="tresc"><h3>Wynajem wózków</h3><p>Wózki elektryczne, spalinowe i wysokiego składowania, od kilku dni do wielu miesięcy. Serwis przez cały okres najmu.</p><p class="marki">Linde, Jungheinrich, Still, Toyota/BT</p></div>
+   </article>
+   <article class="karta">
+    <figure><img src="img/sprzedaz-600.webp" srcset="img/sprzedaz-600.webp 600w, img/sprzedaz-1000.webp 1000w" sizes="(max-width:760px) 86vw, (max-width:1100px) 48vw, 400px" width="600" height="450" alt="Elektryczny wózek widłowy w magazynie" loading="lazy"></figure>
+    <div class="tresc"><h3>Sprzedaż wózków</h3><p>Nowe i używane wózki widłowe dobrane do pracy w Państwa magazynie lub na placu. Doradzimy wybór i zajmiemy się serwisem po zakupie.</p></div>
+   </article>
+  </div>
+  <div class="nawig"><button type="button" data-k="-1" aria-label="Poprzednia usługa"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" data-k="1" aria-label="Następna usługa"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button></div>
+ </div>
+</section>
+
+<section id="przyjazd">
+ <div class="wrap przyjazd">
+  <figure><img src="img/blog-udt-900.webp" srcset="img/blog-udt-600.webp 600w, img/blog-udt-900.webp 900w, img/blog-udt-1300.webp 1300w" sizes="(max-width:860px) 100vw, 640px" width="900" height="514" alt="Wózek widłowy w hali magazynowej" loading="lazy"></figure>
+  <div>
+   <h2>Warsztat przyjeżdża do wózka, nie wózek do warsztatu</h2>
+   <p>Wózek, który stoi, zatrzymuje magazyn i produkcję. Dlatego serwisujemy na miejscu: bez transportu sprzętu i bez czekania w kolejce w warsztacie.</p>
+   <ul class="lista">
+    <li><b>Szybka reakcja na zgłoszenia</b>Ograniczamy przestój do minimum, bo wiemy, ile kosztuje każda godzina bez wózka.</li>
+    <li><b>Różne marki i typy sprzętu</b>Wózki widłowe, podnośniki, ładowarki teleskopowe, suwnice i maszyny budowlane.</li>
+    <li><b>Zgodnie z przepisami</b>Prace serwisowe zgodne z obowiązującymi normami bezpieczeństwa i przepisami.</li>
+   </ul>
+   <a class="btn fio" href="#kontakt">Umów przegląd</a>
+  </div>
+ </div>
+</section>
+
+<section class="udt" id="udt">
+ <div class="wrap">
+  <div>
+   <h2>Sprawy UDT bez stresu</h2>
+   <p>Wózki widłowe, podnośniki i suwnice podlegają dozorowi technicznemu. Pomagamy przejść przez wymagania i procedury Urzędu Dozoru Technicznego tak, żeby sprzęt i dokumenty były w porządku przed badaniem.</p>
+   <p>Obsługujemy firmy z Leszna, Gostynia, Jarocina, Rawicza, Krotoszyna, Borku, Kobylina i Milicza.</p>
+  </div>
+  <div class="boks">
+   <h3>W czym pomagamy</h3>
+   <ul>
+    <li>przygotowanie sprzętu do badania UDT</li>
+    <li>przeglądy i konserwacje wymagane przepisami</li>
+    <li>usunięcie usterek wskazanych przez inspektora</li>
+    <li>doradztwo w sprawach dozoru technicznego</li>
+   </ul>
+   <a class="btn fio" href="#kontakt">Zapytaj o UDT</a>
+  </div>
+ </div>
+</section>
+
+<section id="obszar">
+ <div class="wrap">
+  <div class="glowa">
+   <h2>Gdzie działamy</h2>
+   <p>Mobilny serwis obejmuje południową Wielkopolskę. Każda miejscowość ma na nowej stronie własną zakładkę z ofertą, żeby klienci z okolicy łatwo trafili do Państwa z Google.</p>
+  </div>
+  <div class="miasta">
+   <a href="#kontakt"><strong>Leszno</strong><span>serwis, wynajem, sprzedaż, UDT</span></a>
+   <a href="#kontakt"><strong>Gostyń</strong><span>serwis, sprzedaż, UDT</span></a>
+   <a href="#kontakt"><strong>Jarocin</strong><span>serwis, sprzedaż, UDT</span></a>
+   <a href="#kontakt"><strong>Rawicz</strong><span>serwis, sprzedaż, UDT</span></a>
+   <a href="#kontakt"><strong>Śrem</strong><span>serwis wózków i maszyn</span></a>
+   <a href="#kontakt"><strong>Kościan</strong><span>serwis wózków i maszyn</span></a>
+   <a href="#kontakt"><strong>Krotoszyn</strong><span>serwis, sprzedaż, UDT</span></a>
+   <a href="#kontakt"><strong>Borek, Kobylin, Milicz</strong><span>sprawy UDT</span></a>
+  </div>
+ </div>
+</section>
+
+<section id="poradnik" class="szary">
+ <div class="wrap">
+  <div class="glowa">
+   <h2>Poradnik</h2>
+   <p>Praktyczne wskazówki dla firm, które korzystają z wózków widłowych na co dzień.</p>
+  </div>
+  <div class="wpisy">
+   <a class="wpis" href="#poradnik"><figure><img src="img/naprawa-600.webp" width="600" height="343" alt="Remont wózka widłowego" loading="lazy"></figure><small>Serwis</small><h3>Kiedy remontować wózek widłowy? Wskazówki dla właścicieli firm</h3></a>
+   <a class="wpis" href="#poradnik"><figure><img src="img/blog-bezp-600.webp" width="600" height="343" alt="Wózek widłowy w alejce magazynu" loading="lazy"></figure><small>Wynajem</small><h3>Jak bezpiecznie wynająć wózek widłowy?</h3></a>
+   <a class="wpis" href="#poradnik"><figure><img src="img/blog-linde-600.webp" width="600" height="343" alt="Wózki widłowe Linde w magazynie" loading="lazy"></figure><small>Wynajem</small><h3>Wynajem wózków widłowych Linde: rozwiązanie dla Twojej firmy</h3></a>
+  </div>
+ </div>
+</section>
+
+<section id="kontakt">
+ <div class="wrap kontakt">
+  <div>
+   <h2>Zgłoś serwis, wynajem lub awarię</h2>
+   <p>Proszę opisać sprzęt i problem. Oddzwonimy i ustalimy termin przyjazdu.</p>
+   <div class="dane">
+    <a href="tel:+48727436797"><small>Telefon</small><strong>727 436 797</strong></a>
+    <a href="mailto:serwis.technikar@gmail.com"><small>E-mail</small><strong>serwis.technikar@gmail.com</strong></a>
+    <div><small>Godziny pracy</small><strong>Pon-Pt 8:00-18:00</strong></div>
+   </div>
+  </div>
+  <form id="form" novalidate>
+   <label>Imię lub firma<input name="kto" autocomplete="organization"></label>
+   <label>Telefon<input name="tel" type="tel" autocomplete="tel" inputmode="tel"></label>
+   <label>Miejscowość<input name="gdzie" autocomplete="address-level2"></label>
+   <label>Sprzęt
+    <select name="co"><option>Wózek widłowy</option><option>Podnośnik</option><option>Ładowarka teleskopowa</option><option>Suwnica</option><option>Maszyna budowlana</option><option>Wynajem lub zakup wózka</option><option>Sprawa UDT</option></select>
+   </label>
+   <label class="cale">Opis<textarea name="opis" placeholder="Marka, model, co się dzieje"></textarea></label>
+   <label class="zgoda cale"><input type="checkbox" name="zgoda">Zgadzam się na kontakt w sprawie zgłoszenia.</label>
+   <button class="btn fio" type="submit">Wyślij zgłoszenie</button>
+   <p class="info-form cale" id="formInfo" role="status">Formularz pokazowy w podglądzie, wiadomości nie są wysyłane.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="kol">
+   <div>
+    <div class="f-logo">TECHNIKAR</div>
+    <span class="wstega">mobilny serwis</span>
+    <p>Serwis wózków widłowych, podnośników, ładowarek teleskopowych, suwnic i maszyn budowlanych. Wynajem i sprzedaż wózków.</p>
+   </div>
+   <div><h4>Oferta</h4><ul><li><a href="#uslugi">Serwis wózków</a></li><li><a href="#uslugi">Maszyny budowlane</a></li><li><a href="#uslugi">Wynajem</a></li><li><a href="#uslugi">Sprzedaż</a></li><li><a href="#udt">UDT</a></li></ul></div>
+   <div><h4>Obszar</h4><ul><li>Leszno</li><li>Gostyń</li><li>Jarocin</li><li>Rawicz</li><li>Śrem, Kościan, Krotoszyn</li></ul></div>
+   <div><h4>Kontakt</h4><ul><li><a href="tel:+48727436797">727 436 797</a></li><li><a href="mailto:serwis.technikar@gmail.com">serwis.technikar@gmail.com</a></li><li>Pon-Pt 8:00-18:00</li></ul></div>
+  </div>
+  <div class="dol">
+   <span>© <span id="rok">2026</span> Technikar. Zdjęcia poglądowe: Wikimedia Commons (domena publiczna; Vauxford CC BY-SA 4.0; M. Auledas CC BY 4.0).</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=technikar.com.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+
+  </div>
+ </div>
+</footer>
+
+<nav class="mob" id="mob" aria-label="Szybki kontakt"><a href="tel:+48727436797">Zadzwoń</a><a href="#kontakt">Zgłoś serwis</a></nav>
+
+<script>
+(function(){
+ var b=document.querySelector('.burger'),m=document.getElementById('menu');
+ b.addEventListener('click',function(){var o=m.classList.toggle('otw');b.setAttribute('aria-expanded',o)});
+ m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('otw');b.setAttribute('aria-expanded','false')}});
+ var k=document.getElementById('karty'),nb=document.querySelectorAll('.nawig button');
+ function krok(){var c=k.querySelector('.karta');return c?c.getBoundingClientRect().width+24:300}
+ nb.forEach(function(x){x.addEventListener('click',function(){k.scrollBy({left:krok()*x.dataset.k,behavior:'smooth'})})});
+ function stan(){nb[0].disabled=k.scrollLeft<4;nb[1].disabled=k.scrollLeft+k.clientWidth>k.scrollWidth-4}
+ k.addEventListener('scroll',stan,{passive:true});stan();
+ var d=false,sx=0,sl=0,ruch=0;
+ k.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;d=true;ruch=0;sx=e.clientX;sl=k.scrollLeft;k.classList.add('ciagnie');k.setPointerCapture(e.pointerId)});
+ k.addEventListener('pointermove',function(e){if(!d)return;ruch=Math.abs(e.clientX-sx);k.scrollLeft=sl-(e.clientX-sx)});
+ function koniec(){if(!d)return;d=false;k.classList.remove('ciagnie');var w=krok();k.scrollTo({left:Math.round(k.scrollLeft/w)*w,behavior:'smooth'})}
+ k.addEventListener('pointerup',koniec);k.addEventListener('pointercancel',koniec);
+ k.addEventListener('click',function(e){if(ruch>6){e.preventDefault();e.stopPropagation()}},true);
+ var mob=document.getElementById('mob'),cta=document.querySelector('.hero .btn');
+ if('IntersectionObserver' in window){new IntersectionObserver(function(en){mob.classList.toggle('widac',!en[0].isIntersecting&&en[0].boundingClientRect.top<0)}).observe(cta)}
+ document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();var i=document.getElementById('formInfo');i.textContent='To podgląd: na docelowej stronie zgłoszenie trafi od razu na serwis.technikar@gmail.com.';i.style.color='#3F3081'});
+ document.getElementById('rok').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
