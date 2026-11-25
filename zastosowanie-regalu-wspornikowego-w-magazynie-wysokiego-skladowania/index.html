@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Zastosowanie regału wspornikowego w magazynie wysokiego | Technikar</title>
+<meta name="description" content="Magazyny wysokiego składowania to specyficzne miejsca, które ze względu na swoją konstrukcję i wymagania operacyjne, potrzebują dedykowanych rozwiązań...">
+<link rel="canonical" href="https://technikar.com.pl/zastosowanie-regalu-wspornikowego-w-magazynie-wysokiego-skladowania/">
+<meta property="og:title" content="Zastosowanie regału wspornikowego w magazynie wysokiego | Technikar">
+<meta property="og:description" content="Magazyny wysokiego składowania to specyficzne miejsca, które ze względu na swoją konstrukcję i wymagania operacyjne, potrzebują dedykowanych rozwiązań...">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta name="theme-color" content="#3F3081">
+<link rel="icon" href="../img/favicon.png">
+<link rel="preload" href="../fonts/archivo-latin-800-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/archivo-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Archivo;font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/archivo-latin-400.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Archivo;font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/archivo-latin-ext-400.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Archivo;font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/archivo-latin-600.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Archivo;font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/archivo-latin-ext-600.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Archivo;font-style:italic;font-weight:800;font-display:swap;src:url(../fonts/archivo-latin-800-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Archivo;font-style:italic;font-weight:800;font-display:swap;src:url(../fonts/archivo-latin-ext-800-italic.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--fio:#3F3081;--fio2:#2E2363;--fio-j:#ECEAF6;--zol:#FFC21A;--graf:#17141F;--tekst:#262331;--szary:#EEF0F4;--linia:#D9DCE3;--skos:12deg;--hh:72px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 Archivo,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--tekst);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--fio)}
+h1,h2,h3{font-family:Archivo,system-ui,sans-serif;font-style:italic;font-weight:800;line-height:1.08;letter-spacing:-.01em;color:var(--graf);margin:0}
+h2{font-size:clamp(30px,4.2vw,52px)}
+h3{font-size:22px}
+p{margin:0}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+/* przycisk: wstega z logo */
+.btn{--bg:var(--zol);--fg:var(--graf);position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 30px;font:italic 800 18px/1 Archivo,sans-serif;color:var(--fg);text-decoration:none;border:0;cursor:pointer;background:none;isolation:isolate}
+.btn::before{content:"";position:absolute;inset:0;background:var(--bg);transform:skewX(calc(var(--skos) * -1));z-index:-1;transition:background .2s}
+.btn:hover::before{background:#FFD24F}
+.btn.fio{--bg:var(--fio);--fg:#fff}
+.btn.fio:hover::before{background:var(--fio2)}
+.btn:focus-visible{outline:3px solid var(--zol);outline-offset:4px}
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linia)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:var(--hh)}
+.logo{display:block;flex:none}
+.logo img{width:180px;height:auto}
+.menu{display:flex;gap:4px;margin-left:auto;list-style:none;padding:0;margin-block:0}
+.menu a{display:block;padding:10px 12px;font-weight:600;font-size:16px;color:var(--graf);text-decoration:none;position:relative}
+.menu a::after{content:"";position:absolute;left:12px;right:12px;bottom:4px;height:4px;background:var(--fio);transform:skewX(-12deg) scaleX(0);transform-origin:left;transition:transform .2s}
+.menu a:hover::after,.menu a[aria-current]::after{transform:skewX(-12deg) scaleX(1)}
+.tel{display:inline-flex;align-items:center;gap:10px;font:italic 800 19px/1 Archivo,sans-serif;color:var(--fio);text-decoration:none;white-space:nowrap}
+.tel svg{width:20px;height:20px;flex:none}
+.burger{display:none;margin-left:auto;width:48px;height:48px;border:0;background:none;padding:12px;cursor:pointer}
+.burger span{display:block;height:3px;background:var(--graf);margin:5px 0;transform:skewX(-12deg)}
+/* hero */
+.hero{position:relative;padding:0;min-height:calc(100svh - var(--hh));display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--graf)}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,20,31,.78) 0%,rgba(23,20,31,.45) 38%,rgba(23,20,31,0) 62%),linear-gradient(0deg,rgba(23,20,31,.55),rgba(23,20,31,0) 45%)}
+.hero-in{position:relative;z-index:2;width:min(1240px,100% - 40px);margin:0 auto;padding:0 0 clamp(40px,8vh,96px)}
+.wstega{display:inline-block;position:relative;padding:8px 22px 9px;font:italic 800 17px/1 Archivo,sans-serif;color:#fff;margin-left:6px;isolation:isolate}
+.wstega::before{content:"";position:absolute;inset:0;background:var(--fio);transform:skewX(calc(var(--skos) * -1));z-index:-1}
+.hero h1{color:#fff;font-size:clamp(38px,5vw,74px);max-width:17ch;margin:18px 0 18px;text-shadow:0 2px 24px rgba(0,0,0,.25)}
+.hero .lead{font-size:clamp(17px,1.5vw,21px);max-width:44ch;color:#F1F0F6;margin-bottom:30px}
+.hero .cta{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px}
+.hero .cta .tel{color:#fff;font-size:21px}
+/* trasa - pasek miast */
+.trasa{background:var(--fio);color:#fff;position:relative;overflow:hidden}
+.trasa .wrap{display:flex;align-items:center;gap:22px;padding:20px 0;flex-wrap:wrap}
+.trasa b{font:italic 800 19px/1.2 Archivo,sans-serif;flex:none}
+.trasa ul{display:flex;flex-wrap:wrap;gap:6px 0;list-style:none;margin:0;padding:0}
+.trasa li{font-weight:600;font-size:17px;padding:0 16px;position:relative}
+.trasa li+li::before{content:"";position:absolute;left:-4px;top:50%;width:9px;height:3px;background:var(--zol);transform:translateY(-50%) skewX(-12deg)}
+/* sekcje */
+section{padding:clamp(64px,9vw,120px) 0}
+.szary{background:var(--szary)}
+.glowa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 60px;align-items:end;margin-bottom:44px}
+.glowa p{font-size:18px;max-width:52ch}
+/* uslugi - karty przesuwane */
+.karty{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/3);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;padding-bottom:4px}
+.karty::-webkit-scrollbar{display:none}
+.karty.ciagnie{cursor:grabbing;scroll-snap-type:none}
+.karta{scroll-snap-align:start;background:#fff;display:flex;flex-direction:column;min-width:0;user-select:none}
+.karta figure{margin:0;position:relative;aspect-ratio:3/2;overflow:hidden;background:var(--szary)}
+.karta figure img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.karta .tresc{padding:24px 26px 30px;display:flex;flex-direction:column;gap:12px;flex:1}
+.karta h3{display:flex;align-items:baseline;gap:12px}
+.karta h3::before{content:"";flex:none;width:18px;height:6px;background:var(--fio);transform:skewX(-12deg) translateY(-4px)}
+.karta p{font-size:16px;color:#4A4658}
+.karta .marki{font-weight:600;color:var(--fio);font-size:15px}
+.nawig{display:flex;gap:12px;justify-content:flex-end;margin-top:26px}
+.nawig button{width:58px;height:46px;border:0;background:none;cursor:pointer;position:relative;isolation:isolate}
+.nawig button::before{content:"";position:absolute;inset:0;background:var(--graf);transform:skewX(-12deg);z-index:-1}
+.nawig button:disabled{opacity:.3;cursor:default}
+.nawig svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2.6}
+/* warsztat przyjezdza */
+.przyjazd{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,6vw,90px);align-items:center}
+.przyjazd figure{margin:0;position:relative}
+.przyjazd figure img{width:100%;aspect-ratio:4/3.4;object-fit:cover}
+.przyjazd figure::after{content:"";position:absolute;left:-14px;bottom:-14px;width:46%;height:14px;background:var(--zol);transform:skewX(-12deg)}
+.przyjazd h2{margin-bottom:22px}
+.przyjazd > div > p{font-size:18px;margin-bottom:26px}
+.lista{list-style:none;padding:0;margin:0 0 32px;display:grid;gap:16px}
+.lista li{padding-left:34px;position:relative}
+.lista li::before{content:"";position:absolute;left:0;top:.62em;width:20px;height:5px;background:var(--fio);transform:skewX(-12deg)}
+.lista b{display:block;color:var(--graf);font-weight:600}
+/* UDT - mocna sekcja */
+.udt{background:var(--graf);color:#E7E5EE;position:relative;overflow:hidden}
+.udt::before{content:"";position:absolute;right:-8%;top:0;bottom:0;width:38%;background:var(--fio);transform:skewX(-12deg);opacity:.9}
+.udt .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px 70px;align-items:center}
+.udt h2{color:#fff;margin-bottom:22px}
+.udt p{font-size:18px;max-width:56ch}
+.udt p+p{margin-top:16px}
+.udt .boks{background:#fff;color:var(--tekst);padding:34px 34px 36px}
+.udt .boks h3{margin-bottom:14px}
+.udt .boks ul{margin:0 0 26px;padding:0;list-style:none;display:grid;gap:10px}
+.udt .boks li{padding-left:28px;position:relative;font-size:16px}
+.udt .boks li::before{content:"";position:absolute;left:0;top:.65em;width:16px;height:4px;background:var(--zol);transform:skewX(-12deg)}
+/* obszar */
+.miasta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--linia)}
+.miasta a{display:flex;flex-direction:column;gap:6px;padding:26px 22px 26px 0;border-bottom:1px solid var(--linia);text-decoration:none;color:var(--graf)}
+.miasta a strong{font:italic 800 clamp(24px,2.4vw,32px)/1.05 Archivo,sans-serif}
+.miasta a span{font-size:15px;color:#5C586B}
+.miasta a:hover strong{color:var(--fio)}
+.obszar-uw{margin-top:22px;font-size:16px;color:#5C586B}
+/* poradnik */
+.wpisy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.wpis{text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:14px}
+.wpis figure{margin:0;aspect-ratio:16/9;overflow:hidden}
+.wpis img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.wpis:hover img{transform:scale(1.03)}
+.wpis small{font-weight:600;color:var(--fio);font-size:14px}
+.wpis h3{font-size:21px}
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,80px)}
+.kontakt h2{margin-bottom:20px}
+.kontakt .dane{display:grid;gap:22px;margin-top:30px}
+.kontakt .dane a,.kontakt .dane div{text-decoration:none;color:var(--graf)}
+.kontakt .dane small{display:block;font-size:14px;color:#5C586B;margin-bottom:2px}
+.kontakt .dane strong{font:italic 800 26px/1.15 Archivo,sans-serif;color:var(--fio);word-break:break-word}
+form{background:#fff;padding:clamp(24px,3.4vw,44px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+form .cale{grid-column:1/-1}
+label{display:grid;gap:6px;font-size:15px;font-weight:600;color:var(--graf)}
+input,select,textarea{font:inherit;font-weight:400;font-size:16px;width:100%;padding:13px 14px;border:1px solid #C9CCD6;background:#fff;color:var(--tekst);border-radius:0}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--fio);outline-offset:0;border-color:var(--fio)}
+textarea{min-height:120px;resize:vertical}
+.zgoda{display:flex;gap:10px;font-weight:400;font-size:14px;color:#5C586B;align-items:flex-start}
+.zgoda input{width:20px;height:20px;flex:none;margin-top:2px}
+form .btn{justify-self:start}
+.info-form{font-size:14px;color:#5C586B}
+/* stopka */
+footer{background:var(--fio2);color:#D9D5EC;padding:56px 0 26px;font-size:15px}
+footer .kol{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:30px}
+footer h4{margin:0 0 12px;color:#fff;font:italic 800 18px/1.2 Archivo,sans-serif}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{text-decoration:underline}
+.f-logo{font:italic 800 30px/1 Archivo,sans-serif;color:#fff;letter-spacing:-.01em}
+.f-logo + .wstega{margin:10px 0 16px 4px;font-size:14px;padding:6px 16px}
+.f-logo + .wstega::before{background:var(--zol)}
+.f-logo + .wstega{color:var(--graf)}
+.dol{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center;margin-top:44px;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);font-size:13px;color:#B9B3D6}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+/* pasek mobilny */
+.mob{display:none}
+@media (max-width:1100px){
+.menu{display:none}
+.burger{display:block;margin-left:4px;order:3}
+.top .tel{margin-left:auto}
+.menu.otw{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:var(--hh);background:#fff;padding:12px 20px 24px;border-bottom:4px solid var(--fio);box-shadow:0 20px 30px rgba(23,20,31,.15)}
+.menu.otw a{font-size:20px;padding:14px 4px;border-bottom:1px solid var(--linia)}
+.menu.otw a::after{display:none}
+.karty{grid-auto-columns:calc((100% - 24px)/2)}
+.miasta{grid-template-columns:repeat(2,minmax(0,1fr))}
+footer .kol{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+.glowa,.przyjazd,.udt .wrap,.kontakt{grid-template-columns:minmax(0,1fr)}
+.udt::before{width:60%;right:-30%;opacity:.55}
+.wpisy{grid-template-columns:minmax(0,1fr);gap:34px}
+}
+@media (max-width:760px){
+:root{--hh:64px}
+body{font-size:16px}
+.logo img{width:150px}
+.top .tel span{display:none}
+.top .tel{width:48px;height:48px;justify-content:center;background:var(--fio-j)}
+.hero{flex-direction:column;align-items:stretch;justify-content:flex-start;background:var(--graf)}
+.hero::after{display:none}
+.hero picture{position:relative;inset:auto;flex:1 1 0;min-height:min(62vw,30svh);display:block}
+.hero picture img{object-position:50% 28%}
+.hero picture::after{content:"";position:absolute;left:0;right:0;bottom:0;height:40%;background:linear-gradient(0deg,var(--graf),rgba(23,20,31,0))}
+.hero-in{flex:0 0 auto;padding:0 0 28px;margin-top:-26px}
+.hero h1{font-size:clamp(30px,min(9vw,5.4svh),44px);margin:14px 0 12px}
+.hero .lead{font-size:clamp(15px,2.2svh,17px);margin-bottom:24px;line-height:1.5}
+.hero .cta .tel{display:none}
+.hero .btn{width:100%;margin-left:6px;width:calc(100% - 12px)}
+.wstega{font-size:15px}
+.trasa .wrap{gap:10px;padding:16px 0}
+.trasa li{font-size:15px;padding:0 12px}
+.trasa li:first-child{padding-left:0}
+.karty{grid-auto-columns:86%;gap:16px}
+.nawig{display:none}
+.miasta a{padding:20px 12px 20px 0}
+form{grid-template-columns:minmax(0,1fr)}
+.kontakt .dane strong{font-size:22px}
+footer .kol{grid-template-columns:1fr 1fr;gap:26px 18px}
+footer .kol > div:first-child{grid-column:1/-1}
+.mob{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;background:#fff;box-shadow:0 -6px 20px rgba(23,20,31,.18);transform:translateY(110%);transition:transform .25s;padding-bottom:env(safe-area-inset-bottom)}
+.mob.widac{transform:none}
+.mob a{display:flex;align-items:center;justify-content:center;gap:8px;height:56px;font:italic 800 17px/1 Archivo,sans-serif;text-decoration:none;color:var(--graf)}
+.mob a:first-child{background:var(--fio);color:#fff}
+.mob a:last-child{background:var(--zol)}
+footer{padding-bottom:86px}
+}
+@media (max-width:760px) and (max-height:700px){
+.hero picture{min-height:24svh}
+.hero h1{margin:10px 0 10px}
+.hero .lead{margin-bottom:24px}
+}
+@media (min-width:761px) and (max-height:820px){
+.hero h1{font-size:clamp(34px,3.9vw,56px);margin:14px 0 14px}
+.hero .lead{margin-bottom:24px}
+}
+/* --- podstrony --- */
+a.karta{text-decoration:none;color:inherit}
+a.karta:hover h3{color:var(--fio)}
+a.karta .wiecej{margin-top:auto;font:italic 800 16px/1 Archivo,sans-serif;color:var(--fio)}
+.trasa a{color:#fff;text-decoration:none}
+.trasa a:hover{text-decoration:underline}
+.dalej{font:italic 800 18px/1.2 Archivo,sans-serif;color:var(--fio);text-decoration:none;display:inline-flex;gap:10px;align-items:center}
+.dalej::after{content:"";width:22px;height:5px;background:var(--zol);transform:skewX(-12deg)}
+.dalej:hover{text-decoration:underline}
+/* menu rozwijane */
+.menu .ma{position:relative}
+.menu .ma>a{display:flex;align-items:center;gap:8px}
+.menu .ma>a i{width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-3px)}
+.menu .pod{display:none;position:absolute;left:0;top:100%;min-width:290px;list-style:none;margin:0;padding:10px 0;background:#fff;border-top:4px solid var(--fio);box-shadow:0 18px 30px rgba(23,20,31,.16)}
+.menu .ma:hover .pod,.menu .ma:focus-within .pod{display:block}
+.menu .pod a{padding:11px 22px;font-weight:600}
+.menu .pod a::after{left:22px;right:auto;width:30px;bottom:6px}
+/* okruszki */
+.okruszki{font-size:14px;color:#CFCBE3;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;margin-bottom:14px}
+.okruszki a{color:#fff;text-decoration:none}
+.okruszki a:hover{text-decoration:underline}
+.okruszki i{font-style:normal;opacity:.6}
+.glowa-str .okruszki,.wpis-glowa .okruszki{color:#5C586B}
+.glowa-str .okruszki a,.wpis-glowa .okruszki a{color:var(--fio)}
+/* hero podstrony */
+.hero.pod{min-height:min(76svh,680px)}
+.hero.pod .hero-in{padding-top:40px}
+.hero.pod h1{font-size:clamp(36px,4.4vw,64px);max-width:20ch;margin:0 0 16px}
+.hero.pod .lead{max-width:52ch}
+/* naglowek prostej podstrony */
+.wpis-glowa.bez{position:relative;overflow:hidden}
+.wpis-glowa.bez::after{content:"";position:absolute;right:-6%;top:0;bottom:0;width:18%;background:var(--fio);transform:skewX(-12deg)}
+.wpis-glowa.bez .wrap{position:relative;z-index:1}
+.glowa-str{background:var(--szary);padding:clamp(36px,6vw,72px) 0 clamp(36px,5vw,60px);position:relative;overflow:hidden}
+.glowa-str::after{content:"";position:absolute;right:-6%;top:0;bottom:0;width:22%;background:var(--fio);transform:skewX(-12deg)}
+.glowa-str .wrap{position:relative;z-index:1}
+.glowa-str h1{font-size:clamp(34px,4.6vw,62px);max-width:22ch;margin:0 0 16px}
+.glowa-str .lead{font-size:clamp(17px,1.5vw,20px);max-width:60ch}
+/* tresc + boczny panel */
+.uklad{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:clamp(36px,5vw,80px);align-items:start}
+.uklad aside{position:sticky;top:calc(var(--hh) + 24px);display:grid;gap:28px}
+.art{max-width:72ch}
+.art h2{font-size:clamp(26px,2.8vw,36px);margin:1.5em 0 .55em}
+.art h3{font-size:clamp(20px,2vw,24px);margin:1.4em 0 .5em}
+.art h4,.art h5{font:600 18px/1.3 Archivo,sans-serif;color:var(--graf);margin:1.3em 0 .4em}
+.art>:first-child{margin-top:0}
+.art p{margin:0 0 1em}
+.art ul,.art ol{margin:0 0 1.2em;padding:0}
+.art ul.lista,.art ol.lista{display:grid;gap:12px}
+.art ol.lista{counter-reset:n;list-style:none}
+.art ol.lista li{padding-left:40px;position:relative}
+.art ol.lista li::before{counter-increment:n;content:counter(n);position:absolute;left:0;top:0;width:auto;height:auto;background:none;transform:none;font:italic 800 20px/1.3 Archivo,sans-serif;color:var(--fio)}
+.art .lista b{display:inline;margin-right:6px}
+.art .lista b::after{content:":"}
+.art a{font-weight:600}
+.art strong{color:var(--graf)}
+.wstep{font-size:clamp(18px,1.6vw,21px);color:var(--graf);margin-bottom:1.2em!important}
+/* boks kontaktowy */
+.boks-k{background:var(--fio);color:#E9E6F7;padding:30px 30px 32px;display:grid;gap:12px;justify-items:start}
+.boks-k p{font-size:16px}
+.boks-k .wstega.z{color:var(--graf);margin:0 0 6px 6px;font-size:15px}
+.boks-k .wstega.z::before{background:var(--zol)}
+.boks-k .duzy{display:flex;align-items:center;gap:12px;font:italic 800 30px/1 Archivo,sans-serif;color:#fff;text-decoration:none}
+.boks-k .duzy svg{width:24px;height:24px}
+.boks-k .mail{color:#fff;font-weight:600;word-break:break-word}
+.boks-k .godz{color:#CFCBE3;font-size:15px}
+.boks-k .btn{margin:6px 0 0 6px}
+.linki h3{font-size:20px;margin-bottom:12px}
+.linki ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--linia)}
+.linki li a{display:flex;justify-content:space-between;gap:12px;padding:12px 2px;border-bottom:1px solid var(--linia);text-decoration:none;color:var(--graf);font-weight:600}
+.linki li a::after{content:"";flex:none;width:14px;height:5px;background:var(--fio);transform:skewX(-12deg);align-self:center}
+.linki li a:hover,.linki li a[aria-current]{color:var(--fio)}
+/* zakres uslug - siatka */
+.zakres{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:var(--linia);border:2px solid var(--linia)}
+.zakres>div{background:#fff;padding:28px 26px 30px}
+.zakres b{display:block;font:italic 800 clamp(30px,3vw,40px)/1 Archivo,sans-serif;color:var(--fio);margin-bottom:14px}
+.zakres h3{font-size:21px;margin-bottom:10px}
+.zakres p{font-size:16px;color:#4A4658}
+.zakres a{font-weight:600}
+/* blok zdjecie + tekst */
+.duet{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,90px);align-items:center}
+.duet figure{margin:0;position:relative}
+.duet figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.duet figure::after{content:"";position:absolute;right:-14px;bottom:-14px;width:40%;height:14px;background:var(--zol);transform:skewX(-12deg)}
+.duet h2{margin-bottom:20px}
+.duet p{margin-bottom:16px}
+.duet .lista{margin-top:20px}
+.duet.odwr figure{order:2}
+/* miasta */
+.chipy{display:flex;flex-wrap:wrap;gap:10px 12px;padding-left:4px}
+.chipy a{position:relative;display:inline-block;padding:10px 18px;font-weight:600;color:var(--graf);text-decoration:none;isolation:isolate}
+.chipy a::before{content:"";position:absolute;inset:0;border:2px solid var(--fio);transform:skewX(-12deg);z-index:-1;transition:background .2s}
+.chipy a:hover{color:#fff}
+.chipy a:hover::before{background:var(--fio)}
+.miasto-blok{display:grid;grid-template-columns:300px minmax(0,1fr);gap:16px 40px;padding:28px 0;border-bottom:1px solid var(--linia);align-items:center;scroll-margin-top:calc(var(--hh) + 10px)}
+.miasto-blok:first-child{border-top:1px solid var(--linia)}
+.miasto-blok h2{font-size:clamp(26px,2.6vw,34px)}
+.mapa{margin-top:clamp(40px,6vw,70px)}
+.mapa iframe{display:block;width:100%;height:clamp(320px,42vw,460px);border:0;background:var(--szary)}
+.mapa p{margin-top:12px;font-size:15px;color:#5C586B}
+/* pasek CTA */
+.pasek-cta{background:var(--graf);color:#E7E5EE;padding:clamp(44px,6vw,72px) 0;position:relative;overflow:hidden}
+.pasek-cta::before{content:"";position:absolute;right:-6%;top:0;bottom:0;width:30%;background:var(--fio);transform:skewX(-12deg)}
+.pasek-cta .wrap{position:relative;display:flex;flex-wrap:wrap;gap:24px 60px;align-items:center;justify-content:space-between}
+.pasek-cta h2{color:#fff;font-size:clamp(28px,3.2vw,42px);margin-bottom:10px}
+.pasek-cta .cta{display:flex;flex-wrap:wrap;gap:18px 26px;align-items:center}
+.pasek-cta .tel{color:#fff;font-size:21px}
+/* poradnik */
+.filtry{display:flex;flex-wrap:wrap;gap:10px 12px;margin-bottom:34px;padding-left:4px}
+.filtry button{position:relative;border:0;background:none;padding:10px 20px;font:600 16px/1 Archivo,sans-serif;color:var(--graf);cursor:pointer;isolation:isolate}
+.filtry button::before{content:"";position:absolute;inset:0;border:2px solid var(--fio);transform:skewX(-12deg);z-index:-1}
+.filtry button[aria-pressed="true"]{color:#fff}
+.filtry button[aria-pressed="true"]::before{background:var(--fio)}
+.filtry span{opacity:.75;font-weight:400;margin-left:4px}
+.lista-wpisow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 56px;border-top:1px solid var(--linia)}
+.lista-wpisow a{display:grid;gap:8px;align-content:start;padding:24px 0;border-bottom:1px solid var(--linia);text-decoration:none;color:inherit}
+.lista-wpisow small{font-weight:600;color:var(--fio);font-size:14px}
+.lista-wpisow h3{font-size:21px}
+.lista-wpisow p{font-size:15px;color:#5C586B}
+.lista-wpisow a:hover h3{color:var(--fio)}
+.lista-wpisow a[hidden]{display:none}
+.wyrozn{margin-bottom:clamp(40px,5vw,64px)}
+/* artykul */
+.wpis-glowa{background:var(--szary);padding:clamp(32px,5vw,64px) 0}
+.wpis-glowa .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,520px);gap:clamp(28px,5vw,64px);align-items:center}
+.wpis-glowa.bez .wrap{grid-template-columns:minmax(0,1fr)}
+.wpis-glowa h1{font-size:clamp(30px,3.6vw,50px);margin:0 0 16px;max-width:26ch}
+.wpis-glowa .lead{font-size:18px;max-width:62ch}
+.wpis-glowa figure{margin:0}
+.wpis-glowa figure img{width:100%}
+.wpis-glowa .wstega{margin:0 0 14px 6px;font-size:15px}
+.spis{background:var(--szary);padding:24px 24px 26px}
+.spis h3{font-size:19px;margin-bottom:12px}
+.spis ol{margin:0;padding:0 0 0 20px;display:grid;gap:8px;font-size:15px}
+.spis a{color:var(--graf);text-decoration:none}
+.spis a:hover{color:var(--fio);text-decoration:underline}
+/* stopka */
+footer .firma{margin-top:14px;font-size:14px;color:#B9B3D6;line-height:1.55}
+.dol a{color:#fff}
+/* polityka */
+.polityka h2{font-size:26px;margin:1.6em 0 .5em}
+.polityka ul{padding-left:20px}
+.polityka li{margin-bottom:6px}
+@media (max-width:1180px){
+.menu{display:none}
+.burger{display:block;margin-left:4px;order:3}
+.top .tel{margin-left:auto}
+.menu.otw{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:var(--hh);background:#fff;padding:12px 20px 24px;border-bottom:4px solid var(--fio);box-shadow:0 20px 30px rgba(23,20,31,.15);max-height:calc(100svh - var(--hh));overflow:auto}
+.menu.otw a{font-size:20px;padding:14px 4px;border-bottom:1px solid var(--linia)}
+.menu.otw a::after{display:none}
+.menu.otw .pod{display:block;position:static;box-shadow:none;border:0;padding:0 0 0 18px;min-width:0}
+.menu.otw .pod a{font-size:17px;padding:12px 4px}
+.menu.otw .ma>a i{display:none}
+.uklad{grid-template-columns:minmax(0,1fr) 320px}
+}
+@media (max-width:960px){
+.uklad{grid-template-columns:minmax(0,1fr)}
+.uklad aside{position:static}
+.zakres{grid-template-columns:minmax(0,1fr)}
+.duet{grid-template-columns:minmax(0,1fr)}
+.duet.odwr figure{order:0}
+.wpis-glowa .wrap{grid-template-columns:minmax(0,1fr)}
+.lista-wpisow{grid-template-columns:minmax(0,1fr)}
+.miasto-blok{grid-template-columns:minmax(0,1fr);gap:12px}
+}
+@media (max-width:860px){
+.wpisy.przesun{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:min(78%,340px);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.wpisy.przesun::-webkit-scrollbar{display:none}
+.wpisy.przesun .wpis{scroll-snap-align:start}
+}
+@media (max-width:760px){
+.hero.pod{min-height:calc(100svh - var(--hh))}
+.hero.pod picture{min-height:min(56vw,30svh)}
+.hero.pod h1{font-size:clamp(28px,min(8.4vw,5svh),40px);margin:0 0 12px}
+.hero.pod .hero-in{padding-top:0}
+.okruszki{font-size:13px;margin-bottom:10px}
+.glowa-str::after,.wpis-glowa.bez::after{width:16%;right:-10%}
+.wpis-glowa figure{display:none}
+.pasek-cta::before{width:40%;right:-25%;opacity:.6}
+.pasek-cta .btn{width:calc(100% - 12px);margin-left:6px}
+.boks-k{padding:26px 22px 28px}
+.boks-k .duzy{font-size:26px}
+.mapa iframe{height:340px}
+.filtry button{padding:9px 14px;font-size:15px}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://technikar.com.pl/"}, {"@type": "ListItem", "position": 2, "name": "Poradnik", "item": "https://technikar.com.pl/poradnik/"}, {"@type": "ListItem", "position": 3, "name": "Zastosowanie regału wspornikowego w magazynie wysokiego składowania", "item": "https://technikar.com.pl/zastosowanie-regalu-wspornikowego-w-magazynie-wysokiego-skladowania/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Zastosowanie regału wspornikowego w magazynie wysokiego składowania", "datePublished": "2024-02-14", "dateModified": "2024-03-14", "author": {"@type": "Organization", "name": "Technikar"}, "publisher": {"@id": "https://technikar.com.pl/#firma"}, "mainEntityOfPage": "https://technikar.com.pl/zastosowanie-regalu-wspornikowego-w-magazynie-wysokiego-skladowania/"}</script>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="../" aria-label="Technikar - strona główna"><img src="../img/logo.webp" width="510" height="142" alt="Technikar mobilny serwis"></a>
+  <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <ul class="menu" id="menu">
+   <li class="ma"><a href="../serwis-wozkow-widlowych/">Serwis<i aria-hidden="true"></i></a><ul class="pod"><li><a href="../serwis-wozkow-widlowych/">Wózki widłowe</a></li><li><a href="../podnosniki-ladowarki-teleskopowe-suwnice/">Podnośniki, ładowarki, suwnice</a></li><li><a href="../serwis-maszyn-budowlanych/">Maszyny budowlane</a></li></ul></li><li><a href="../wynajem-wozkow-widlowych/">Wynajem</a></li><li><a href="../sprzedaz-wozkow-widlowych/">Sprzedaż</a></li><li><a href="../udt/">UDT</a></li><li><a href="../obszar-dzialania/">Obszar działania</a></li><li><a href="../poradnik/" aria-current="page">Poradnik</a></li><li><a href="../kontakt/">Kontakt</a></li>
+  </ul>
+  <a class="tel" href="tel:+48727436797" aria-label="Zadzwoń: 727 436 797"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5.6 1.5 3 2.2C1.9 2.6 1.3 3.8 1.6 5c1.7 6.6 6.8 11.7 13.4 13.4 1.2.3 2.4-.3 2.8-1.4l.7-2.6-4.4-2.4-2 2c-2.6-1.2-4.6-3.2-5.8-5.8l2-2z"/></svg><span>727 436 797</span></a>
+ </div>
+</header>
+<main>
+<section class="wpis-glowa bez">
+ <div class="wrap">
+  <div><nav class="okruszki" aria-label="Okruszki"><a href="../">Strona główna</a> <i>/</i> <a href="../poradnik/">Poradnik</a> <i>/</i> <span aria-current="page">Zastosowanie regału wspornikowego w magazynie wysokiego składowania</span></nav><span class="wstega">Magazyn</span><h1>Zastosowanie regału wspornikowego w magazynie wysokiego składowania</h1></div>
+  
+ </div>
+</section>
+<section>
+ <div class="wrap uklad">
+  <article class="art">
+<p>Magazyny wysokiego składowania to specyficzne miejsca, które ze względu na swoją konstrukcję i wymagania operacyjne, potrzebują dedykowanych rozwiązań magazynowych. Wśród nich, regały wspornikowe odgrywają kluczową rolę, umożliwiając efektywne i bezpieczne przechowywanie długich towarów. W niniejszym artykule przyjrzymy się bliżej, czym charakteryzują się te specjalistyczne konstrukcje i jakie przynoszą korzyści w kontekście magazynów wysokiego składowania.</p>
+<h4>Czym jest regał magazynowy wspornikowy?</h4>
+<p>Regał magazynowy wspornikowy to konstrukcja, która dzięki wykorzystaniu specjalnych ram i wsporników, pozwala na bezpieczne przechowywanie towarów dłużycowych o różnej masie i wymiarach. Zaletą takich regałów jest możliwość ich adaptacji do indywidualnych potrzeb magazynu, co obejmuje zarówno dostosowanie liczby wsporników, jak i całkowitej długości konstrukcji. To sprawia, że regały te są niezwykle funkcjonalne i mogą służyć do przechowywania szerokiego spektrum produktów.</p>
+<h4>Regał magazynowy wspornikowy na zamówienie</h4>
+<p>Zamówienie regału wspornikowego, które jest dostosowane do konkretnych wymagań magazynu, to rozwiązanie pozwalające na maksymalizację przestrzeni składowej i optymalizację procesów logistycznych. Konstrukcje te mogą być projektowane tak, by umożliwiały przechowywanie nie tylko długich elementów, ale również palet czy innych standardowych jednostek ładunkowych. Dodatkowe akcesoria, jak półki czy kraty pomostowe, zwiększają uniwersalność regałów, umożliwiając składowanie różnorodnych typów towarów.</p>
+<h4>Zabezpieczenia w regałach magazynowych wspornikowych</h4>
+<p>Bezpieczeństwo to priorytet w każdym magazynie, a regały wspornikowe oferują szerokie możliwości zabezpieczenia składowanych produktów. Elementy zapobiegające ześlizgnięciu się towaru czy osłony przeciwuderzeniowe są tylko niektórymi z dostępnych opcji. Takie zabezpieczenia minimalizują ryzyko wypadków i uszkodzeń zarówno towarów, jak i sprzętu magazynowego.</p>
+<h4>Uniwersalne regały magazynowe wspornikowe</h4>
+<p>Nowoczesne regały wspornikowe to konstrukcje, które można łatwo dostosować do zmieniających się potrzeb magazynu. Możliwość regulacji wysokości półek bez potrzeby inwestowania w nowe regały stanowi znaczącą oszczędność i pozwala na elastyczne zarządzanie przestrzenią składową. Ponadto, regały dostępne z dostępem z obu stron znacząco usprawniają operacje magazynowe, redukując czas potrzebny na dostęp do przechowywanych towarów.</p>
+<h4>Zewnętrzne regały magazynowe wspornikowe</h4>
+<p>Regały wspornikowe znajdują zastosowanie nie tylko wewnątrz budynków magazynowych. Zewnętrzne wersje tych konstrukcji, wyposażone w dachy i osłony boczne, chronią towar przed negatywnym wpływem czynników atmosferycznych. Jest to idealne rozwiązanie dla przedsiębiorstw, które muszą składować długie przedmioty na zewnątrz, lub w magazynach, gdzie panują specyficzne warunki, jak obniżona temperatura.</p>
+<h4>Gdzie korzysta się z regałów wspornikowych?</h4>
+<p>Regały wspornikowe są niezastąpione wszędzie tam, gdzie konieczne jest magazynowanie długich towarów, takich jak rury, pręty, płyty czy belki. Są to produkty często spotykane w branży budowlanej, jednak regały te świetnie sprawdzają się również w magazynach produkcyjnych, centrach dystrybucyjnych, a także w sklepach z materiałami budowlanymi. Dzięki swojej uniwersalności i możliwości dostosowania do specyficznych wymagań, regały wspornikowe są cenione w wielu sektorach gospodarki.</p>
+<p>Zastosowanie regałów wspornikowych w magazynie wysokiego składowania to rozwiązanie, które oferuje liczne korzyści operacyjne i logistyczne. Dzięki ich uniwersalności, możliwości dostosowania do indywidualnych potrzeb, a także opcjom zabezpieczeń, regały te stanowią nieodzowny element wyposażenia magazynów wymagających efektywnego przechowywania długich towarów. Wybierając regały wspornikowe, przedsiębiorstwa zyskują nie tylko na optymalizacji przestrzeni magazynowej, ale również na zwiększeniu bezpieczeństwa i efektywności pracy magazynowej.</p>
+</article>
+  <aside><div class="boks-k">
+ <span class="wstega z">szybki kontakt</span>
+ <p>Potrzebny przegląd, naprawa albo wózek na wynajem? Proszę zadzwonić albo wysłać zgłoszenie.</p>
+ <a class="duzy" href="tel:+48727436797"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5.6 1.5 3 2.2C1.9 2.6 1.3 3.8 1.6 5c1.7 6.6 6.8 11.7 13.4 13.4 1.2.3 2.4-.3 2.8-1.4l.7-2.6-4.4-2.4-2 2c-2.6-1.2-4.6-3.2-5.8-5.8l2-2z"/></svg>727 436 797</a>
+ <a class="mail" href="mailto:serwis.technikar@gmail.com">serwis.technikar@gmail.com</a>
+ <p class="godz">Pon-Pt 8:00-18:00</p>
+ <a class="btn" href="../kontakt/">Formularz zgłoszenia</a>
+</div></aside>
+ </div>
+</section>
+<section class="pasek-cta">
+ <div class="wrap">
+  <div><h2>Wózek stoi? Przyjedziemy na miejsce.</h2><p>Zadzwoń albo wyślij zgłoszenie. Oddzwonimy i ustalimy termin serwisu.</p></div>
+  <div class="cta"><a class="btn" href="../kontakt/">Zgłoś serwis</a><a class="tel" href="tel:+48727436797"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5.6 1.5 3 2.2C1.9 2.6 1.3 3.8 1.6 5c1.7 6.6 6.8 11.7 13.4 13.4 1.2.3 2.4-.3 2.8-1.4l.7-2.6-4.4-2.4-2 2c-2.6-1.2-4.6-3.2-5.8-5.8l2-2z"/></svg>727 436 797</a></div>
+ </div>
+</section>
+<section class="szary">
+ <div class="wrap">
+  <div class="glowa"><h2>Podobne artykuły</h2><p><a class="dalej" href="../poradnik/">Wszystkie artykuły poradnika</a></p></div>
+  <div class="wpisy przesun"><a class="wpis" href="../vna-co-warto-wiedziec-o-wozkach-systemowych-kluczowe-informacje-zalety-i-zastosowania/"><figure><img src="../img/wynajemw-600.webp" srcset="../img/wynajemw-600.webp 600w, ../img/wynajemw-1000.webp 1000w" sizes="(max-width:760px) 78vw, (max-width:1100px) 46vw, 390px" width="600" height="400" alt="" loading="lazy"></figure><small>Magazyn</small><h3>VNA - Co warto wiedzieć o wózkach systemowych? Kluczowe informacje, zalety i zastosowania</h3></a><a class="wpis" href="../spalinowe-wozki-widlowe-w-zamknietych-pomieszczeniach/"><figure><img src="../img/wynajemw-600.webp" srcset="../img/wynajemw-600.webp 600w, ../img/wynajemw-1000.webp 1000w" sizes="(max-width:760px) 78vw, (max-width:1100px) 46vw, 390px" width="600" height="400" alt="" loading="lazy"></figure><small>Magazyn</small><h3>Czy spalinowe wózki widłowe sprawdzą się w zamkniętych, małych pomieszczeniach? Analiza zagrożeń i alternatywnych rozwiązań</h3></a><a class="wpis" href="../rola-wozkow-widlowych-w-optymalizacji-procesow-logistycznych-jak-dobra-maszyna-moze-zwiekszyc-wydajnosc/"><figure><img src="../img/wynajemw-600.webp" srcset="../img/wynajemw-600.webp 600w, ../img/wynajemw-1000.webp 1000w" sizes="(max-width:760px) 78vw, (max-width:1100px) 46vw, 390px" width="600" height="400" alt="" loading="lazy"></figure><small>Magazyn</small><h3>Rola wózków widłowych w optymalizacji procesów logistycznych: jak dobra maszyna może zwiększyć wydajność?</h3></a></div>
+ </div>
+</section>
+</main>
+<footer>
+ <div class="wrap">
+  <div class="kol">
+   <div>
+    <div class="f-logo">TECHNIKAR</div>
+    <span class="wstega">mobilny serwis</span>
+    <p>Serwis wózków widłowych, podnośników, ładowarek teleskopowych, suwnic i maszyn budowlanych. Wynajem i sprzedaż wózków.</p>
+    <p class="firma">TECHNIKAR Karol Ciechanowski<br>Krajewice 19, 63-800 Gostyń<br>NIP 696-187-50-04</p>
+   </div>
+   <div><h4>Oferta</h4><ul><li><a href="../serwis-wozkow-widlowych/">Serwis wózków widłowych</a></li><li><a href="../podnosniki-ladowarki-teleskopowe-suwnice/">Podnośniki i suwnice</a></li><li><a href="../serwis-maszyn-budowlanych/">Maszyny budowlane</a></li><li><a href="../wynajem-wozkow-widlowych/">Wynajem wózków</a></li><li><a href="../sprzedaz-wozkow-widlowych/">Sprzedaż wózków</a></li><li><a href="../udt/">Sprawy UDT</a></li></ul></div>
+   <div><h4>Obszar</h4><ul><li><a href="../serwis-wozkow-widlowych/leszno/">Leszno</a></li><li><a href="../serwis-wozkow-widlowych/gostyn/">Gostyń</a></li><li><a href="../serwis-wozkow-widlowych/jarocin/">Jarocin</a></li><li><a href="../serwis-wozkow-widlowych/rawicz/">Rawicz</a></li><li><a href="../obszar-dzialania/">Wszystkie miejscowości</a></li></ul></div>
+   <div><h4>Kontakt</h4><ul><li><a href="tel:+48727436797">727 436 797</a></li><li><a href="mailto:serwis.technikar@gmail.com">serwis.technikar@gmail.com</a></li><li>Pon-Pt 8:00-18:00</li><li><a href="../poradnik/">Poradnik</a></li></ul></div>
+  </div>
+  <div class="dol">
+   <span>© 2026 Technikar · <a href="../polityka-prywatnosci/">Polityka prywatności</a> · Zdjęcia poglądowe: Wikimedia Commons (autorzy i licencje w polityce prywatności)</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=technikar.com.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+
+  </div>
+ </div>
+</footer>
+<nav class="mob" id="mob" aria-label="Szybki kontakt"><a href="tel:+48727436797">Zadzwoń</a><a href="../kontakt/">Zgłoś serwis</a></nav>
+<script>
+(function(){
+ var b=document.querySelector('.burger'),m=document.getElementById('menu');
+ b.addEventListener('click',function(){var o=m.classList.toggle('otw');b.setAttribute('aria-expanded',o)});
+ m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('otw');b.setAttribute('aria-expanded','false')}});
+ // karty przesuwane palcem i mysza
+ document.querySelectorAll('.karty,.wpisy.przesun').forEach(function(k){
+  var nb=k.parentNode.querySelectorAll('.nawig button');
+  function krok(){var c=k.firstElementChild;return c?c.getBoundingClientRect().width+parseFloat(getComputedStyle(k).columnGap||24):300}
+  nb.forEach(function(x){x.addEventListener('click',function(){k.scrollBy({left:krok()*x.dataset.k,behavior:'smooth'})})});
+  function stan(){if(nb.length){nb[0].disabled=k.scrollLeft<4;nb[1].disabled=k.scrollLeft+k.clientWidth>k.scrollWidth-4}}
+  k.addEventListener('scroll',stan,{passive:true});stan();
+  var d=false,sx=0,sl=0,ruch=0;
+  k.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse'||k.scrollWidth<=k.clientWidth)return;d=true;ruch=0;sx=e.clientX;sl=k.scrollLeft;k.classList.add('ciagnie')});
+  k.addEventListener('pointermove',function(e){if(!d)return;ruch=Math.abs(e.clientX-sx);if(ruch>4){k.scrollLeft=sl-(e.clientX-sx);e.preventDefault()}});
+  function koniec(){if(!d)return;d=false;k.classList.remove('ciagnie');var w=krok();k.scrollTo({left:Math.round(k.scrollLeft/w)*w,behavior:'smooth'})}
+  window.addEventListener('pointerup',koniec);k.addEventListener('pointercancel',koniec);
+  k.addEventListener('click',function(e){if(ruch>6){e.preventDefault();e.stopPropagation();ruch=0}},true);
+  k.addEventListener('dragstart',function(e){e.preventDefault()});
+ });
+ // filtr poradnika
+ var f=document.querySelector('.filtry');
+ if(f){f.addEventListener('click',function(e){var t=e.target.closest('button');if(!t)return;
+  f.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===t)});
+  var k=t.dataset.kat;document.querySelectorAll('.lista-wpisow a').forEach(function(a){a.hidden=k!=='*'&&(' '+a.dataset.kat+' ').indexOf(' '+k+' ')<0})})}
+ // pasek mobilny po minieciu pierwszego przycisku
+ var mob=document.getElementById('mob'),cta=document.querySelector('main .btn, main h1');
+ if(cta&&'IntersectionObserver' in window){new IntersectionObserver(function(en){mob.classList.toggle('widac',!en[0].isIntersecting&&en[0].boundingClientRect.top<0)}).observe(cta)}
+ var fm=document.getElementById('form');
+ if(fm)fm.addEventListener('submit',function(e){e.preventDefault();var i=document.getElementById('formInfo');i.textContent='Na tej wersji strony formularz nie wysyła wiadomości. Po uruchomieniu zgłoszenie trafi od razu na serwis.technikar@gmail.com.';i.style.color='#3F3081'});
+})();
+
+</script>
+</body>
+</html>
