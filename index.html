@@ -422,6 +422,16 @@ footer .firma{margin-top:14px;font-size:14px;color:#B9B3D6;line-height:1.55}
 .zakres.cztery{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media (max-width:1180px){.zakres.cztery{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:960px){.zakres.cztery{grid-template-columns:minmax(0,1fr)}}
+/* strona glowna: zdjecie klienta (1080 px) w prawej czesci, tekst na grafitowym tle */
+@media (min-width:761px){
+.hero.dziel{align-items:center;min-height:min(calc(100svh - var(--hh)),980px)}
+.hero.dziel::after{display:none}
+.hero.dziel picture{left:auto;right:0;width:min(52%,1180px)}
+.hero.dziel picture img{object-position:50% 35%}
+.hero.dziel picture::after{content:"";position:absolute;inset:0 auto 0 0;width:22%;background:linear-gradient(90deg,var(--graf),rgba(23,20,31,0))}
+.hero.dziel .hero-in{margin:0;width:calc(100% - min(52%,1180px));padding:56px 40px 56px clamp(24px,5vw,120px)}
+.hero.dziel h1{font-size:clamp(34px,3.4vw,62px)}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "@id": "https://technikar.com.pl/#firma", "name": "Technikar - mobilny serwis wózków widłowych", "legalName": "TECHNIKAR Karol Ciechanowski", "url": "https://technikar.com.pl/", "logo": "https://technikar.com.pl/img/logo.webp", "image": "https://technikar.com.pl/img/logo.webp", "telephone": "+48727436797", "email": "serwis.technikar@gmail.com", "taxID": "6961875004", "address": {"@type": "PostalAddress", "streetAddress": "Krajewice 19", "postalCode": "63-800", "addressLocality": "Gostyń", "addressCountry": "PL"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "16:00"}], "areaServed": ["Leszno", "Gostyń", "Jarocin", "Rawicz", "Śrem", "Kościan", "Krotoszyn", "Borek Wielkopolski", "Kobylin", "Milicz", "Sułów"]}</script>
 </head>
@@ -437,10 +447,10 @@ footer .firma{margin-top:14px;font-size:14px;color:#B9B3D6;line-height:1.55}
  </div>
 </header>
 <main>
-<section class="hero" aria-label="Technikar - mobilny serwis">
+<section class="hero dziel" aria-label="Technikar - mobilny serwis">
  <picture>
-  <source media="(max-width:760px)" srcset="img/hero-m-480.webp 480w, img/hero-m-800.webp 800w, img/hero-m-1100.webp 1100w" sizes="100vw">
-  <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2560.webp 2560w" sizes="100vw" width="2560" height="1707" alt="Wózek widłowy Linde na placu" fetchpriority="high">
+  <source media="(max-width:760px)" srcset="img/hero-tk-m-480.webp 480w, img/hero-tk-m-800.webp 800w, img/hero-tk-m-1080.webp 1080w" sizes="100vw">
+  <img src="img/hero-tk-1080.webp" srcset="img/hero-tk-720.webp 720w, img/hero-tk-1080.webp 1080w" sizes="min(52vw,1180px)" width="1080" height="960" alt="Auto serwisowe Technikar przed budynkiem warsztatu" fetchpriority="high">
  </picture>
  <div class="hero-in">
   <span class="wstega">mobilny serwis</span>
@@ -467,10 +477,10 @@ footer .firma{margin-top:14px;font-size:14px;color:#B9B3D6;line-height:1.55}
    <p>Serwisujemy wózki różnych marek i modeli, maszyny budowlane i urządzenia dźwigowe. Gdy potrzebny jest zastępczy albo dodatkowy wózek, mamy też wynajem i sprzedaż.</p>
   </div>
   <div class="karty" id="karty" tabindex="0" aria-label="Usługi - przesuń w bok">
-   <a class="karta" href="serwis-wozkow-widlowych/"><figure><img src="img/tk-linde-600.webp" srcset="img/tk-linde-600.webp 600w, img/tk-linde-1000.webp 1000w" sizes="(max-width:760px) 86vw, (max-width:1180px) 48vw, 400px" width="600" height="400" alt="Wózek widłowy Linde na placu Technikar" loading="lazy"></figure>
+   <a class="karta" href="serwis-wozkow-widlowych/"><figure><img src="img/tk-szary-d-600.webp" srcset="img/tk-szary-d-600.webp 600w, img/tk-szary-d-1000.webp 1000w" sizes="(max-width:760px) 86vw, (max-width:1180px) 48vw, 400px" width="600" height="400" alt="Wózek widłowy Still z masztem" loading="lazy"></figure>
     <div class="tresc"><h3>Serwis wózków widłowych</h3><p>Przeglądy techniczne, naprawy, przygotowanie do badań UDT - na miejscu u klienta. Wózki elektryczne i spalinowe różnych marek.</p><span class="wiecej">Więcej</span></div></a><a class="karta" href="podesty-podnosniki-hakowce-suwnice/"><figure><img src="img/teleskop-600.webp" srcset="img/teleskop-600.webp 600w, img/teleskop-1000.webp 1000w" sizes="(max-width:760px) 86vw, (max-width:1180px) 48vw, 400px" width="600" height="400" alt="Podnośnik teleskopowy na placu budowy" loading="lazy"></figure>
     <div class="tresc"><h3>Podesty ruchome, podnośniki, hakowce, suwnice</h3><p>Kontrole stanu technicznego, naprawy hydrauliki i elektryki, przeglądy konserwacyjne, przygotowanie do badań UDT.</p><span class="wiecej">Więcej</span></div></a><a class="karta" href="serwis-maszyn-budowlanych/"><figure><img src="img/tk-koparka-600.webp" srcset="img/tk-koparka-600.webp 600w, img/tk-koparka-1000.webp 1000w" sizes="(max-width:760px) 86vw, (max-width:1180px) 48vw, 400px" width="600" height="400" alt="Koparka CAT przed siedzibą Technikar" loading="lazy"></figure>
-    <div class="tresc"><h3>Maszyny budowlane</h3><p>Ładowarki teleskopowe i koparki: przeglądy konserwacyjne, naprawy bieżące, modernizacje.</p><span class="wiecej">Więcej</span></div></a><a class="karta" href="wynajem-wozkow-widlowych/"><figure><img src="img/tk-szary-d-600.webp" srcset="img/tk-szary-d-600.webp 600w, img/tk-szary-d-1000.webp 1000w" sizes="(max-width:760px) 86vw, (max-width:1180px) 48vw, 400px" width="600" height="400" alt="Wózek widłowy Still z masztem" loading="lazy"></figure>
+    <div class="tresc"><h3>Maszyny budowlane</h3><p>Ładowarki teleskopowe i koparki: przeglądy konserwacyjne, naprawy bieżące, modernizacje.</p><span class="wiecej">Więcej</span></div></a><a class="karta" href="wynajem-wozkow-widlowych/"><figure><img src="img/tk-linde-600.webp" srcset="img/tk-linde-600.webp 600w, img/tk-linde-1000.webp 1000w" sizes="(max-width:760px) 86vw, (max-width:1180px) 48vw, 400px" width="600" height="400" alt="Wózek widłowy Linde na placu Technikar" loading="lazy"></figure>
     <div class="tresc"><h3>Wynajem wózków</h3><p>Wózki spalinowe i elektryczne, wynajem długoterminowy.</p><span class="wiecej">Więcej</span></div></a><a class="karta" href="sprzedaz-wozkow-widlowych/"><figure><img src="img/tk-zolty-600.webp" srcset="img/tk-zolty-600.webp 600w, img/tk-zolty-1000.webp 1000w" sizes="(max-width:760px) 86vw, (max-width:1180px) 48vw, 400px" width="600" height="400" alt="Żółty wózek widłowy przed siedzibą Technikar" loading="lazy"></figure>
     <div class="tresc"><h3>Sprzedaż wózków</h3><p>Nowe i używane wózki widłowe dobrane do pracy w Państwa magazynie lub na placu. Doradzimy wybór i zajmiemy się serwisem po zakupie.</p><span class="wiecej">Więcej</span></div></a>
   </div>
@@ -480,7 +490,7 @@ footer .firma{margin-top:14px;font-size:14px;color:#B9B3D6;line-height:1.55}
 
 <section id="przyjazd">
  <div class="wrap przyjazd">
-  <figure><img src="img/tk-baza-1000.webp" srcset="img/tk-baza-600.webp 600w, img/tk-baza-1000.webp 1000w, img/tk-baza-1080.webp 1080w" sizes="(max-width:860px) 100vw, 640px" width="1000" height="850" alt="Siedziba Technikar i auto serwisowe" loading="lazy"></figure>
+  <figure><img src="img/tk-wynajem-1000.webp" srcset="img/tk-wynajem-600.webp 600w, img/tk-wynajem-1000.webp 1000w, img/tk-wynajem-1080.webp 1080w" sizes="(max-width:860px) 100vw, 640px" width="1000" height="667" alt="Wózek widłowy Linde w trakcie serwisu" loading="lazy"></figure>
   <div>
    <h2>Warsztat przyjeżdża do wózka, nie wózek do warsztatu</h2>
    <p>Wózek, który stoi, zatrzymuje magazyn i produkcję. Dlatego serwisujemy na miejscu: bez transportu sprzętu i bez czekania w kolejce w warsztacie.</p>
